@@ -9,7 +9,7 @@
     "start":"node index.js",
     "clientInstall": "npm install --prefix client",
     "build":"npm run build --prefix client",
-    "heroku-postbuild":"npm run clientInstall && npm run build",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false  npm run clientInstall && npm run build",
     "dev": "concurrently \" npm run server \" \" npm run client \""
   },
   "keywords": [],
