@@ -1,5 +1,5 @@
-const app = require("express")
-const router = app.Router();
+const App = require("express")
+const router = App.Router();
 const {register,registerValidations,
 login,loginValidations} = require("../controllers/userController")
 router.post("/register", registerValidations, register);
